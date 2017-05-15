@@ -1,0 +1,13 @@
+name = Panels MDL Layouts
+description = Panel's layouts using Material Design Lite layout system as base.
+package = Panels
+dependencies[] = panels
+core = 7.x
+version = 7.x-0.1
+
+; Information added by Drupal.org packaging script on 2017-01-06
+version = "7.x-1.x-dev"
+core = "7.x"
+project = "panels_mdl_layouts"
+datestamp = "1483740244"
+
