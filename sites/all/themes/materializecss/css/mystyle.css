@@ -1,0 +1,35 @@
+/*will attack all panel hbehind all hoverable cards*/
+.panel-pane:hover {
+  background-color: red;
+  transition: box-shadow .25s;
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  /*background-color: green;*/
+  /*margin-left: 10px;*/
+}
+
+/*// behing all rows of cards //*/
+.panel-col {
+  /*background-color: red;*/
+}
+
+/*this will attack the actual all hoverable card */
+.pane-content > div {
+  max-height: 400px;
+  /*background-color: blue;*/
+  overflow:hidden;
+}
+
+/*attack behind all panels and hoverable cards - its behind all this above here*/
+#peterpan {
+  /*background-color: grey;*/
+}
+
+ {
+
+}
+
+
+.pane-title  {
+  text-align: center;
+}
