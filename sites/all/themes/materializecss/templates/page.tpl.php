@@ -1,17 +1,18 @@
 
-<nav class="teal lighten-1" id="nav" role="navigation">
-  <div class="nav-wrapper ">
-    <?php if ($logo): ?>
-      <a class="brand-logo" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
-        <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
-      </a>
-    <?php endif; ?>
-    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
-    <?php if (!empty($primary_nav)): ?>
-      <div class="right hide-on-med-and-down">
-        <?php print render($primary_nav); ?>
-      </div>
-    <?php endif; ?>
+<nav>
+  <div class="nav-wrapper">
+    <a href="/" class="brand-logo">Logo</a>
+    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+    <ul class="right hide-on-med-and-down">
+      <li><a href="sass.html">Pass</a></li>
+      <li><a href="badges.html">Present</a></li>
+      <li><a href="collapsible.html">Future</a></li>
+    </ul>
+    <ul class="side-nav" id="mobile-demo">
+      <li><a href="sass.html">Pass</a></li>
+      <li><a href="badges.html">Present</a></li>
+      <li><a href="collapsible.html">Future</a></li>
+    </ul>
   </div>
 </nav>
 <?php if (!empty($bread)): print $bread; endif; ?>

@@ -17,6 +17,9 @@
  *   data including the contexts and all of the other panes being displayed.
  */
 ?>
+<div class="panel-float">
+
+
 <?php if ($pane_prefix): ?>
   <?php print $pane_prefix; ?>
 <?php endif; ?>
@@ -58,3 +61,4 @@
 <?php if ($pane_suffix): ?>
   <?php print $pane_suffix; ?>
 <?php endif; ?>
+</div>
