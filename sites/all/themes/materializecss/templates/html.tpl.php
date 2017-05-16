@@ -46,6 +46,8 @@
 ?><!DOCTYPE html>
 <html lang="<?php print $language->language; ?>" dir="<?php print $language->dir; ?>" class="no-js" <?php print $rdf_namespaces; ?>>
 <head profile="<?php print $grddl_profile; ?>">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900" rel="stylesheet">
   <title><?php print $head_title; ?></title>
   <?php print $head; ?>

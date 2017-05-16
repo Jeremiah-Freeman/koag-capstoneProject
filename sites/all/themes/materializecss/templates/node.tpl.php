@@ -1,6 +1,6 @@
 
 
-<div class="container">
+
 
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> card-panel hoverable"<?php print $attributes; ?>>
   <div class="content card-content" >
@@ -35,7 +35,7 @@
   <?php print render($content['comments']); ?>
 </div>
 
-</div>
+
 <?php
 
 /**

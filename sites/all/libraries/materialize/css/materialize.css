@@ -4549,37 +4549,37 @@ small {
 }
 
 @media only screen and (min-width: 480px) {
-  .flow-text {
+  .flow-text.panel-panel {
     font-size: 1.296rem;
   }
 }
 
 @media only screen and (min-width: 510px) {
-  .flow-text {
+  .flow-text.panel-panel {
     font-size: 1.32rem;
   }
 }
 
 @media only screen and (min-width: 540px) {
-  .flow-text {
+  .flow-text.panel-panel {
     font-size: 1.344rem;
   }
 }
 
 @media only screen and (min-width: 570px) {
-  .flow-text {
+  .flow-text.panel-panel {
     font-size: 1.368rem;
   }
 }
 
 @media only screen and (min-width: 600px) {
-  .flow-text {
+  .flow-text.panel-panel {
     font-size: 1.392rem;
   }
 }
 
 @media only screen and (min-width: 630px) {
-  .flow-text {
+  .flow-text.panel-panel {
     font-size: 1.416rem;
   }
 }
@@ -4627,19 +4627,19 @@ small {
 }
 
 @media only screen and (min-width: 870px) {
-  .flow-text {
+  .flow-tex.panel-panelt {
     font-size: 1.608rem;
   }
 }
 
 @media only screen and (min-width: 900px) {
-  .flow-text {
+  .flow-text.panel-panel {
     font-size: 1.632rem;
   }
 }
 
 @media only screen and (min-width: 930px) {
-  .flow-text {
+  .flow-text.panel-panel {
     font-size: 1.656rem;
   }
 }
@@ -4651,7 +4651,7 @@ small {
 }
 
 @media only screen and (max-width: 360px) {
-  .flow-text {
+  .flow-text.panel-panel {
     font-size: 1.2rem;
   }
 }

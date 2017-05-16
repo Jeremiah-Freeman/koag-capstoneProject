@@ -1,18 +1,22 @@
+
+
+
 h2 {
   font-family: 'Raleway', sans-serif;
 }
 
 /*will attack all panel hbehind all hoverable cards*/
-.panel-pane:hover {
+.pane-content:hover {
   /*background-color: red;*/
-  transition: box-shadow .25s;
-  box-shadow: 0 2px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: box-shadow .10s;
+  box-shadow: 0 0px 17px 0 rgba(0, 0, 0, 0.2), 0 0px 17px 0 rgba(0, 0, 0, 0.19);
 
   /*background-color: green;*/
   /*margin-left: 10px;*/
 }
 .panel-panel {
   margin-top: 30px;
+
   /*background-color: green;*/
 }
 
@@ -47,6 +51,178 @@ h2 {
   /*margin-top: 20px;*/
 }
 
+/*this is on node-* page and hold active/edit tabs*/
+.tabs.z-depth-1 {
+    margin-top: 20px;
+    margin-right: 20%;
+    /*background-color: red;*/
+}
 .active.tab{
   background-color: #e3f2fd ;
+}
+
+img {
+    width: 100%;
+}
+.main.container.tester{
+    background-color: green;
+}
+
+.front-page-container {
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+
+/*@media only screen and (min-width: 100px) {
+    .col-1{
+        width: 100%;
+    }
+}*/
+
+
+.tester {
+    /*background-color: red;*/
+}
+
+
+.comment-boarder {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+
+
+
+
+@media only screen and (min-width: 360px) {
+  .flow-text {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (min-width: 390px) {
+  .flow-text {
+    font-size: 1.224rem;
+  }
+}
+
+@media only screen and (min-width: 420px) {
+  .flow-text {
+    font-size: 1.248rem;
+  }
+}
+
+@media only screen and (min-width: 450px) {
+  .flow-text {
+    font-size: 1.272rem;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  .flow-text.panel-panel {
+    font-size: 1.296rem;
+  }
+}
+
+@media only screen and (min-width: 510px) {
+  .flow-text.panel-panel {
+    font-size: 1.32rem;
+  }
+}
+
+@media only screen and (min-width: 540px) {
+  .flow-text.panel-panel {
+    font-size: 1.344rem;
+  }
+}
+
+@media only screen and (min-width: 570px) {
+  .flow-text.panel-panel {
+    font-size: 1.368rem;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .flow-text.panel-panel {
+    font-size: 1.392rem;
+  }
+}
+
+@media only screen and (min-width: 630px) {
+  .flow-text.panel-panel {
+    font-size: 1.416rem;
+  }
+}
+
+@media only screen and (min-width: 660px) {
+  .flow-text {
+    font-size: 1.44rem;
+  }
+}
+
+@media only screen and (min-width: 690px) {
+  .flow-text {
+    font-size: 1.464rem;
+  }
+}
+
+@media only screen and (min-width: 720px) {
+  .flow-text {
+    font-size: 1.488rem;
+  }
+}
+
+@media only screen and (min-width: 750px) {
+  .flow-text {
+    font-size: 1.512rem;
+  }
+}
+
+@media only screen and (min-width: 780px) {
+  .flow-text {
+    font-size: 1.536rem;
+  }
+}
+
+@media only screen and (min-width: 810px) {
+  .flow-text {
+    font-size: 1.56rem;
+  }
+}
+
+@media only screen and (min-width: 840px) {
+  .flow-text {
+    font-size: 1.584rem;
+  }
+}
+
+@media only screen and (min-width: 870px) {
+  .flow-tex.panel-panelt {
+    font-size: 1.608rem;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .flow-text.panel-panel {
+    font-size: 1.632rem;
+  }
+}
+
+@media only screen and (min-width: 930px) {
+  .flow-text.panel-panel {
+    font-size: 1.656rem;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .flow-text {
+    font-size: 1.68rem;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .flow-text.panel-panel {
+    font-size: 1.2rem;
+  }
 }

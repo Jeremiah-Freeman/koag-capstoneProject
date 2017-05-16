@@ -1,3 +1,84 @@
+
+<nav class="teal lighten-1" id="nav" role="navigation">
+  <div class="nav-wrapper ">
+    <?php if ($logo): ?>
+      <a class="brand-logo" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
+        <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
+      </a>
+    <?php endif; ?>
+    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+    <?php if (!empty($primary_nav)): ?>
+      <div class="right hide-on-med-and-down">
+        <?php print render($primary_nav); ?>
+      </div>
+    <?php endif; ?>
+  </div>
+</nav>
+<?php if (!empty($bread)): print $bread; endif; ?>
+
+<div id="page">
+  <?php if (!empty($page['header'])): ?>
+    <div class="top">
+      <?php print render($page['header']); ?>
+    </div>
+  <?php endif; ?><!-- /.header  -->
+
+  <div class="">
+    <?php if (!empty($page['sidebar_first'])): ?>
+      <aside class="<?php print $sidebar_left; ?> sidebar-first" role="complementary">
+        <?php print render($page['sidebar_first']); ?>
+      </aside>  <!-- /#sidebar-first -->
+    <?php endif; ?>
+
+    <section class="main front-page-container tester" role="main">
+      <?php if (!empty($page['highlighted'])): ?>
+        <div class="highlighted"><?php print render($page['highlight']); ?></div>
+      <?php endif; ?>
+
+      <?php print render($secondary_navigation); ?>
+
+      <a id="main-content"></a>
+      <?php print render($title_prefix); ?>
+      <?php print render($title_suffix); ?>
+      <?php print $messages; ?>
+      <?php if (!empty($tabs['#primary'])): ?>
+        <?php print render($tabs_primary); ?>
+      <?php endif; ?>
+
+      <?php if (!empty($page['help'])): ?>
+        <?php print render($page['help']); ?>
+      <?php endif; ?>
+      <?php if (!empty($action_links)): ?>
+        <div class="action-links"><i class="mdi-action-note-add small"></i><?php print render($action_links); ?></div>
+      <?php endif; ?>
+      <?php print render($tabs_secondary); ?>
+      <?php print render($page['content']); ?>
+    </section>
+
+    <?php if (!empty($page['sidebar_second'])): ?>
+      <aside class="<?php print $sidebar_right; ?> sidebar-last" role="complementary">
+        <?php print render($page['sidebar_second']); ?>
+      </aside>  <!-- /#sidebar-second -->
+    <?php endif; ?>
+  </div> <!-- /main  -->
+
+  <?php if (!empty($page['footer'])): ?>
+    <div class="divider"></div>
+    <footer class="page-footer">
+      <div class="container">
+        <?php print render($page['footer']); ?>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+          @2015 copyright text
+        </div>
+      </div>
+    </footer>
+  <?php endif; ?>
+
+</div> <!-- /#page -->
+
+
 <?php
 /**
  * @file
@@ -73,80 +154,3 @@
  * @ingroup themeable
  */
 ?>
-<nav class="teal lighten-1" id="nav" role="navigation">
-  <div class="nav-wrapper container">
-    <?php if ($logo): ?>
-      <a class="brand-logo" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
-        <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
-      </a>
-    <?php endif; ?>
-    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
-    <?php if (!empty($primary_nav)): ?>
-      <div class="right hide-on-med-and-down">
-        <?php print render($primary_nav); ?>
-      </div>
-    <?php endif; ?>
-  </div>
-</nav>
-<div id="page">
-  <?php if (!empty($page['header'])): ?>
-    <div class="top">
-      <?php print render($page['header']); ?>
-    </div>
-  <?php endif; ?><!-- /.header  -->
-
-  <div class="row page grid">
-    <?php if (!empty($page['sidebar_first'])): ?>
-      <aside class="<?php print $sidebar_left; ?> sidebar-first" role="complementary">
-        <?php print render($page['sidebar_first']); ?>
-      </aside>  <!-- /#sidebar-first -->
-    <?php endif; ?>
-
-    <section class="<?php print $main_grid; ?> main container" role="main">
-      <?php if (!empty($page['highlighted'])): ?>
-        <div class="highlighted"><?php print render($page['highlight']); ?></div>
-      <?php endif; ?>
-
-      <?php print render($secondary_navigation); ?>
-
-      <?php if (!empty($breadcrumb)): print $breadcrumb; endif; ?>
-      <a id="main-content"></a>
-      <?php print render($title_prefix); ?>
-      <?php print render($title_suffix); ?>
-      <?php print $messages; ?>
-      <?php if (!empty($tabs['#primary'])): ?>
-        <?php print render($tabs_primary); ?>
-      <?php endif; ?>
-
-      <?php if (!empty($page['help'])): ?>
-        <?php print render($page['help']); ?>
-      <?php endif; ?>
-      <?php if (!empty($action_links)): ?>
-        <div class="action-links"><i class="mdi-action-note-add small"></i><?php print render($action_links); ?></div>
-      <?php endif; ?>
-      <?php print render($tabs_secondary); ?>
-      <?php print render($page['content']); ?>
-    </section>
-
-    <?php if (!empty($page['sidebar_second'])): ?>
-      <aside class="<?php print $sidebar_right; ?> sidebar-last" role="complementary">
-        <?php print render($page['sidebar_second']); ?>
-      </aside>  <!-- /#sidebar-second -->
-    <?php endif; ?>
-  </div> <!-- /main  -->
-
-  <?php if (!empty($page['footer'])): ?>
-    <div class="divider"></div>
-    <footer class="page-footer">
-      <div class="container">
-        <?php print render($page['footer']); ?>
-      </div>
-      <div class="footer-copyright">
-        <div class="container">
-          @2015 copyright text
-        </div>
-      </div>
-    </footer>
-  <?php endif; ?>
-
-</div> <!-- /#page -->

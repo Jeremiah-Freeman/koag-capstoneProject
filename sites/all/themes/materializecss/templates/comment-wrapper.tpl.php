@@ -36,7 +36,9 @@
  * @ingroup themeable
  */
 ?>
-<div id="comments" class="<?php print $classes; ?>"<?php print $attributes; ?>>
+<div class="container">
+
+<div id="comments" class=" comment-boarder <?php print $classes; ?>"<?php print $attributes; ?>>
   <?php if ($content['comments'] && $node->type != 'forum'): ?>
     <?php print render($title_prefix); ?>
     <h2 class="title"><?php print t('Comments'); ?></h2>
@@ -49,4 +51,5 @@
     <h4 class="title comment-form"><i class="mdi-communication-comment"></i><?php print t('Note up'); ?></h4>
     <?php print render($content['comment_form']); ?>
   <?php endif; ?>
+</div>
 </div>
