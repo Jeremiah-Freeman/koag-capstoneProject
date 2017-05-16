@@ -46,6 +46,7 @@
 ?><!DOCTYPE html>
 <html lang="<?php print $language->language; ?>" dir="<?php print $language->dir; ?>" class="no-js" <?php print $rdf_namespaces; ?>>
 <head profile="<?php print $grddl_profile; ?>">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900" rel="stylesheet">
   <title><?php print $head_title; ?></title>
   <?php print $head; ?>
   <?php print $styles; ?>
@@ -62,23 +63,6 @@
     <a href="#middle-content" class="element-invisible element-focusable"><?php print t('Skip to main content'); ?></a>
   </div>
   <?php print $page_top; ?>
-  <div class="row">
-      <form class="col s12">
-        <div class="row">
-          <div class="input-field col s6">
-            <i class="material-icons prefix">account_circle</i>
-            <input id="icon_prefix" type="text" class="validate">
-            <label class="active" for="icon_prefix">First Name</label>
-          </div>
-          <div class="input-field col s6">
-            <i class="material-icons prefix">phone</i>
-            <input id="icon_telephone" type="tel" class="validate">
-            <label for="icon_telephone">Telephone</label>
-          </div>
-        </div>
-      </form>
-    </div>
-
   <?php print $page; ?>
   <?php print $page_bottom; ?>
   <?php print $scripts; ?>

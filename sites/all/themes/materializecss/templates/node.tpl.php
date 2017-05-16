@@ -1,10 +1,9 @@
 
-<?php
-  $links = render($content['links']);
-?>
+
+<div class="container">
 
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> card-panel hoverable"<?php print $attributes; ?>>
-  <div class="content card-content">
+  <div class="content card-content" >
     <?php print render($title_prefix); ?>
       <h4 class="card-title" <?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h4>
     <?php print render($title_suffix); ?>
@@ -32,12 +31,11 @@
       ?>
     </div>
   </div>
-  <?php if ($links): ?>
-    <?php print $links; ?>
-  <?php endif; ?>
+
   <?php print render($content['comments']); ?>
 </div>
 
+</div>
 <?php
 
 /**
