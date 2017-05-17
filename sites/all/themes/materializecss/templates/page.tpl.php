@@ -12,6 +12,7 @@
       <li><a href="sass.html">Pass</a></li>
       <li><a href="badges.html">Present</a></li>
       <li><a href="collapsible.html">Future</a></li>
+      <li><a href="collapsible.html">Create</a></li>
     </ul>
   </div>
 </nav>

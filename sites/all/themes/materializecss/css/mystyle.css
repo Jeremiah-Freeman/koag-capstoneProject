@@ -5,6 +5,47 @@ h2 {
   font-family: 'Raleway', sans-serif;
 }
 
+
+.side-nav#mobile-demo{
+  position: fixed;
+  width: 300px;
+  left: 0;
+  top: 0;
+  margin: 0;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  height: 100%;
+  height: calc(100% + 60px);
+  height: -moz-calc(100%);
+  padding-bottom: 60px;
+  background-color: #fff;
+  z-index: 999;
+  overflow-y: auto;
+  will-change: transform;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform: translateX(-105%);
+          transform: translateX(-105%);
+}
+.side-nav#mobile-demo li a{
+  /*padding: 40%;*/
+  padding-top: 20%;
+  padding-bottom: 40%;
+  /*margin-bottom: 20px*/
+  vertical-align: text-centers;
+  color: #1de9b6;
+}
+
+.side-nav li > a {
+  color: rgba(0, 0, 0, 0.87);
+  display: block;
+  font-size: 50px;
+  font-weight: 500;
+  height: 48px;
+  line-height: 48px;
+  padding: 0 32px;
+}
+
 /*will attack all panel hbehind all hoverable cards*/
 .pane-content:hover {
   /*background-color: red;*/
