@@ -1,4 +1,7 @@
+body {
+  font-family: 'raleway', sans-serif;
 
+}
 
 
 h2 {
@@ -184,4 +187,15 @@ width: 100%;
 }
 nav {
 margin-bottom: 25px;
+}
+
+
+.col.s12.m3.sidebar-first {
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+#user-login {
+  margin-left: 20%;
+    margin-right: 20%;
 }

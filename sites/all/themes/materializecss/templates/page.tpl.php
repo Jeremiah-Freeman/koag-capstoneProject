@@ -3,15 +3,17 @@
     <a href="/" class="brand-logo">Logo</a>
     <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
     <ul class="right hide-on-med-and-down">
-      <li><a href="sass.html">Pass</a></li>
-      <li><a href="badges.html">Present</a></li>
+      <li><a href="past-views">Past</a></li>
+      <li><a href="present-views">Present</a></li>
       <li><a href="collapsible.html">Future</a></li>
+      <li><a href="user/logout">logout</a></li>
     </ul>
     <ul class="side-nav" id="mobile-demo">
-      <li><a href="sass.html">Pass</a></li>
-      <li><a href="badges.html">Present</a></li>
+      <li><a href="past-views">Past</a></li>
+      <li><a href="present-views">Present</a></li>
       <li><a href="collapsible.html">Future</a></li>
       <li><a href="collapsible.html">Create</a></li>
+      <li><a href="user/logout">logout</a></li>
     </ul>
   </div>
 </nav>
