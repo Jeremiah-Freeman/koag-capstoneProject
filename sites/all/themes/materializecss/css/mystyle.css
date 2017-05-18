@@ -27,6 +27,7 @@ h2 {
   -webkit-transform: translateX(-105%);
           transform: translateX(-105%);
 }
+
 .side-nav#mobile-demo li a{
   /*padding: 40%;*/
   padding-top: 20%;
@@ -46,18 +47,19 @@ h2 {
   padding: 0 32px;
 }
 
+.videolableclass {
+display: none;
+}
+
 /*will attack all panel hbehind all hoverable cards*/
 .pane-content:hover {
   /*background-color: red;*/
   transition: box-shadow .10s;
   box-shadow: 0 0px 17px 0 rgba(0, 0, 0, 0.2), 0 0px 17px 0 rgba(0, 0, 0, 0.19);
-
-  /*background-color: green;*/
-  /*margin-left: 10px;*/
 }
+
 .panel-panel {
   margin-top: 30px;
-
   /*background-color: green;*/
 }
 
@@ -71,7 +73,6 @@ h2 {
   width: 100%;
   word-wrap: break-word;
   margin-right: 25px;
-
   max-height: 50px;
   min-height: 500px;
   /*background-color: blue;*/
@@ -108,21 +109,12 @@ h2 {
 img {
     width: 100%;
 }
-.main.container.tester{
-    background-color: green;
-}
+
 /*container around the front page*/
 .front-page-container {
     margin-left: 6%;
     margin-right: 6%;
-
 }
-
-
-.tester {
-    /*background-color: red;*/
-}
-
 
 .comment-boarder {
     border: 1px solid #c0c0c0;
@@ -168,3 +160,14 @@ width: 100%;
 
  }
  }
+
+
+/*// video styleing*/
+
+.player {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+}
