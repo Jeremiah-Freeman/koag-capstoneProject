@@ -99,6 +99,7 @@ display: none;
 /*this is on node-* page and hold active/edit tabs*/
 .tabs.z-depth-1 {
     margin-top: 20px;
+    margin-bottom: 20px;
     margin-right: 20%;
     /*background-color: red;*/
 }
@@ -170,4 +171,17 @@ width: 100%;
     padding-top: 35px;
     height: 0;
     overflow: hidden;
+}
+
+
+.field-add-more-submit.btn.form-submit.ajax-processed {
+  margin-top: 10px;
+}
+
+.btn.form-submit {
+  margin-top: 10px;
+
+}
+nav {
+margin-bottom: 25px;
 }
