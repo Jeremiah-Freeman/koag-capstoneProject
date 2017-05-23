@@ -1,0 +1,5 @@
+name = Alter Modules
+description = custom module adjusting
+core = 7.x
+package = alterForms
+files[] = tester.module
