@@ -5,6 +5,10 @@
 
 (function ($) {
   "use strict"
+  $('#textarea1').val('New Text');
+  $('#textarea1').trigger('autoresize');
+  $(".button-collapse").sideNav();
+  $(".modal").modal();
 
   /**
    * Changes caret icon for fieldset when it is being collapsed or expanded.
@@ -24,15 +28,4 @@
       });
     }
   };
-  jQuery(".button-collapse").sideNav();
 })(jQuery);
-
-
-$( document ).ready(function() {
-
-  Materialize.updateTextFields();
-  $('#textarea1').val('New Text');
-  $('#textarea1').trigger('autoresize');
-  $(".button-collapse").sideNav();
-  alert('asdasda');
-});
