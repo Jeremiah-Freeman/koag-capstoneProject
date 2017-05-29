@@ -109,7 +109,13 @@ display: none;
 }
 
 img {
-  
+    min-width: 100%;
+}
+
+.pane-content {
+  /*overflow: hidden;*/
+  /*margin-left: 50px;
+  padding-left: 100px;*/
 }
 
 /*container around the front page*/
