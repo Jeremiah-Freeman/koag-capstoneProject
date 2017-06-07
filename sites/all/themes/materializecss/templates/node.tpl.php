@@ -2,7 +2,7 @@
 
 
 
-<div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> card-panel hoverable"<?php print $attributes; ?>>
+<div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> card-panel hoverables"<?php print $attributes; ?>>
   <div class="content card-content" >
     <?php print render($title_prefix); ?>
       <h4 class="card-title" <?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h4>
