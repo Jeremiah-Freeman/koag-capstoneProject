@@ -9,6 +9,7 @@
   $('#textarea1').trigger('autoresize');
   $(".button-collapse").sideNav();
   $(".modal").modal();
+  $( ".links.inline" ).addClass( "HHHHHHHHH" );
 
   /**
    * Changes caret icon for fieldset when it is being collapsed or expanded.

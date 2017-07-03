@@ -122,12 +122,6 @@ img {
     margin-right: 6%;
 }
 
-.comment-boarder {
-    border: 1px solid #c0c0c0;
-    margin: 0 2px;
-    padding: 0.35em 0.625em 0.75em;
-}
-
 .panel-panel.panel-col-first, .panel-panel.panel-col, .panel-panel.panel-col-last{
   /*overflow:hidden;*/
 
@@ -184,7 +178,7 @@ width: 100%;
 }
 
 .btn.form-submit {
-  margin-top: 10px;
+  margin-top: -10px;
 
 }
 nav {
@@ -192,6 +186,9 @@ margin-bottom: 25px;
 background-color: #00b0ff !important;
 }
 
+div.panel-panel .panel-col-first {
+  float: left;
+}
 
 .col.s12.m3.sidebar-first {
   margin-left: 25%;
@@ -214,4 +211,50 @@ background-color: #00b0ff !important;
 .card-panel {
   background-color: red;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+/*comment styling*/
+
+
+.comment-boarder {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    width: 60%;
+    margin-left: 21%;
+    padding: 0.35em 0.625em 0.75em;
+}
+
+#edit-comment-body-und-0-format {
+  display: none;
+}
+
+textarea.materialize-textarea {
+  overflow-y: hidden;
+  /* prevents scroll bar flash */
+  padding: 0 1.6rem 0 !important;
+  /* prevents text jump on Enter keypress */
+  resize: none;
+  min-height: 3rem;
+  width: 60% !important;
+}
+
+.permalink, .submitted{
+  display: none
+}
+
+.comment.comment-by-node-author.comment-by-viewer.clearfix > .links.inline li {
+  float:left;
+  margin-left: 15px
+}
+
+input[value|="Save"].btn.btn.form-submit#edit-submit {
+margin-top: -50px;
+}
+
+input[value|="Preview"].btn.btn.form-submit#edit-preview {
+margin-top: -50px;
+}
+
+.mdi-communication-comment {
+  margin-left: 36%;
 }

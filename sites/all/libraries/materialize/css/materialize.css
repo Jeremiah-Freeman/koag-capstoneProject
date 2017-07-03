@@ -2602,7 +2602,7 @@ a {
 }
 
 /*turned off to find the double transition*/
-.hoverable {
+/*.hoverable {
   transition: box-shadow .25s;
   box-shadow: 0;
 }
@@ -2611,7 +2611,7 @@ a {
   display: block;
   transition: box-shadow .25s;
   box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
+}*/
 
 .divider {
   height: 1px;
@@ -6333,7 +6333,7 @@ textarea {
 textarea.materialize-textarea {
   overflow-y: hidden;
   /* prevents scroll bar flash */
-  padding: .8rem 0 1.6rem 0;
+  /*padding: .8rem 0 1.6rem 0;*/
   /* prevents text jump on Enter keypress */
   resize: none;
   min-height: 3rem;

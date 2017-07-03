@@ -36,20 +36,26 @@
  * @ingroup themeable
  */
 ?>
-<div class="container">
 
+<div class="container">
 <div id="comments" class=" comment-boarder <?php print $classes; ?>"<?php print $attributes; ?>>
+
+  <?php if ($content['comment_form']): ?>
+    <h4 class="title comment-form"><i class="mdi-communication-comment"></i>
+      <?php print t('notes'); ?></h4>
+    <?php print render($content['comment_form']); ?>
+  <?php endif; ?>
+
   <?php if ($content['comments'] && $node->type != 'forum'): ?>
     <?php print render($title_prefix); ?>
-    <h2 class="title"><?php print t('Comments'); ?></h2>
+
+
+    <h5 class="title"><?php print t('Comments'); ?></h5>
     <?php print render($title_suffix); ?>
   <?php endif; ?>
 
-  <?php print render($content['comments']); ?>
+  <?php print render($content['comments']);?>
 
-  <?php if ($content['comment_form']): ?>
-    <h4 class="title comment-form"><i class="mdi-communication-comment"></i><?php print t('Note up'); ?></h4>
-    <?php print render($content['comment_form']); ?>
-  <?php endif; ?>
+
 </div>
 </div>

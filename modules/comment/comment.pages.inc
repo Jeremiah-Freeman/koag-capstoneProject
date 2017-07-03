@@ -42,7 +42,7 @@ function comment_reply($node, $pid = NULL) {
       $build['comment_form'] = drupal_get_form("comment_node_{$node->type}_form", (object) array('pid' => $pid, 'nid' => $node->nid));
     }
     else {
-      drupal_set_message(t('You are not authorized to post comments.'), 'error');
+      drupal_set_message(t('Oops, please quickly sign up to comment!'), 'error');
       drupal_goto("node/$node->nid");
     }
   }
@@ -60,7 +60,7 @@ function comment_reply($node, $pid = NULL) {
           // parent comment both belong to the same parent node.
           if ($comment->nid != $node->nid) {
             // Attempting to reply to a comment not belonging to the current nid.
-            drupal_set_message(t('The comment you are replying to does not exist.'), 'error');
+            drupal_set_message(t("Uh-oh, the comment you're replying to doesn't exist."), 'error');
             drupal_goto("node/$node->nid");
           }
           // Display the parent comment
@@ -70,12 +70,12 @@ function comment_reply($node, $pid = NULL) {
           $build['comment_parent'] = comment_view($comment, $node);
         }
         else {
-          drupal_set_message(t('The comment you are replying to does not exist.'), 'error');
+          drupal_set_message(t("Uh-oh, the comment you're replying to doesn't exist."), 'error');
           drupal_goto("node/$node->nid");
         }
       }
       else {
-        drupal_set_message(t('You are not authorized to view comments.'), 'error');
+        drupal_set_message(t('Oops, sorry this is for our members.  No worries though, just sign up!'), 'error');
         drupal_goto("node/$node->nid");
       }
     }
@@ -86,7 +86,7 @@ function comment_reply($node, $pid = NULL) {
 
     // Should we show the reply box?
     if ($node->comment != COMMENT_NODE_OPEN) {
-      drupal_set_message(t("This discussion is closed: you can't post new comments."), 'error');
+      drupal_set_message(t("Whoops! This discussion has been closed already, comments have been closed too."), 'error');
       drupal_goto("node/$node->nid");
     }
     elseif (user_access('post comments')) {
@@ -94,7 +94,7 @@ function comment_reply($node, $pid = NULL) {
       $build['comment_form'] = drupal_get_form("comment_node_{$node->type}_form", (object) $edit);
     }
     else {
-      drupal_set_message(t('You are not authorized to post comments.'), 'error');
+      drupal_set_message(t("Yikes, we're sorry you don't have access to post comments here right now."), 'error');
       drupal_goto("node/$node->nid");
     }
   }

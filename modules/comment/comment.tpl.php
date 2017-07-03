@@ -71,6 +71,7 @@
   <?php print render($title_suffix); ?>
 
   <div class="submitted">
+
     <?php print $permalink; ?>
     <?php print $submitted; ?>
   </div>

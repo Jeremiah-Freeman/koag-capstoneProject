@@ -271,7 +271,7 @@ function comment_menu() {
   );
   $items['comment/%/delete'] = array(
     'title' => 'Delete',
-    'page callback' => 'comment_confirm_delete_page',
+    'page callback' => 'comment_reply',
     'page arguments' => array(1),
     'access arguments' => array('administer comments'),
     'type' => MENU_LOCAL_TASK,
@@ -1039,17 +1039,17 @@ function comment_links($comment, $node) {
   if ($node->comment == COMMENT_NODE_OPEN) {
     if (user_access('administer comments') && user_access('post comments')) {
       $links['comment-delete'] = array(
-        'title' => t('delete'),
+        'title' => t('Delete'),
         'href' => "comment/$comment->cid/delete",
         'html' => TRUE,
       );
       $links['comment-edit'] = array(
-        'title' => t('edit'),
+        'title' => t('Edit'),
         'href' => "comment/$comment->cid/edit",
         'html' => TRUE,
       );
       $links['comment-reply'] = array(
-        'title' => t('reply'),
+        'title' => t('Reply'),
         'href' => "comment/reply/$comment->nid/$comment->cid",
         'html' => TRUE,
       );
@@ -1584,7 +1584,7 @@ function comment_save($comment) {
 
       field_attach_insert('comment', $comment);
 
-      // Tell the other modules a new comment has been submitted.
+      // Tell the other modules a new comment has been Reply.
       module_invoke_all('comment_insert', $comment);
       module_invoke_all('entity_insert', $comment, 'comment');
     }
@@ -1946,7 +1946,7 @@ function comment_form($form, &$form_state, $comment) {
   elseif ($user->uid) {
     $form['author']['_author'] = array(
       '#type' => 'item',
-      '#title' => t('Your name'),
+      '#title' => t(''),
       '#markup' => theme('username', array('account' => $user)),
     );
     $form['author']['name'] = array(
@@ -2052,7 +2052,7 @@ function comment_form($form, &$form_state, $comment) {
 }
 
 /**
- * Build a preview from submitted form values.
+ * Build a preview from Reply form values.
  */
 function comment_form_build_preview($form, &$form_state) {
   $comment = comment_form_submit_build_comment($form, $form_state);
@@ -2312,7 +2312,7 @@ function template_preprocess_comment(&$variables) {
 
   $variables['title']     = l($comment->subject, $uri['path'], $uri['options']);
   $variables['permalink'] = l(t('Permalink'), $uri['path'], $uri['options']);
-  $variables['submitted'] = t('Submitted by !username on !datetime', array('!username' => $variables['author'], '!datetime' => $variables['created']));
+  $variables['submitted'] = t('!username wrote:', array('!username' => $variables['author'], '!datetime' => $variables['created']));
 
   // Preprocess fields.
   field_attach_preprocess('comment', $comment, $variables['elements'], $variables);

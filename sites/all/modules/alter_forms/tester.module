@@ -10,8 +10,13 @@ function tester_form_alter(&$form, &$form_state, &$form_id) {
 
       case 'comment_node_plotoer_form':
         $form['author']['_author']['#title'] = 'hdhdhdhdhdhdhdhdhdhdhdh';
+
+      case 'comment_node_active_form':
+        $form;
+
         break;
 
+        // print out main id of form --->  $form_id  <-----
      }
     //  print '<pre>';
     //  print_r($form);
