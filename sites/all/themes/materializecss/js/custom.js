@@ -9,7 +9,7 @@
   $('#textarea1').trigger('autoresize');
   $(".button-collapse").sideNav();
   $(".modal").modal();
-  $( ".links.inline" ).addClass( "HHHHHHHHH" );
+  $( ".comment.comment-by-node-author.comment-by-viewer.clearfix.user-picture" ).addClass( "HHHHHHHHH" );
 
   /**
    * Changes caret icon for fieldset when it is being collapsed or expanded.

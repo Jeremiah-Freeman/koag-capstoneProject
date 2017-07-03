@@ -9,7 +9,7 @@ function tester_form_alter(&$form, &$form_state, &$form_id) {
         $form['pass']['#title'] = null;
 
       case 'comment_node_plotoer_form':
-        $form['author']['_author']['#title'] = 'hdhdhdhdhdhdhdhdhdhdhdh';
+        $form['author']['_author']['#title'] = '';
 
       case 'comment_node_active_form':
         $form;
